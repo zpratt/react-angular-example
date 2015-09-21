@@ -9,9 +9,9 @@ var gulp = require('gulp'),
 
 gulp.task('lint', eslint(gulp));
 gulp.task('karma', ['lint'], karma());
-gulp.task('webpack', ['karma'], webpack());
+gulp.task('webpack', webpack());
 gulp.task('server', previewServer());
 
 gulp.task('test', ['karma']);
-gulp.task('build', ['test', 'webpack']);
+gulp.task('build', ['webpack']);
 gulp.task('default', ['server']);
