@@ -1,4 +1,4 @@
-React Angular Seed
+React Angular Example
 ---
 
 The README is a work in progress. Here's the gist:
