@@ -17,11 +17,11 @@ function getPreprocessors() {
 
     ['production', 'tests'].forEach(function (testDependency) {
         config.scripts[testDependency].forEach(function (script) {
-            preprocessors[script] = ['webpack', 'sourcemap']
+            preprocessors[script] = ['webpack', 'sourcemap'];
         });
     });
 
-    return preprocessors
+    return preprocessors;
 }
 
 module.exports = function (karmaConfig) {
@@ -68,5 +68,5 @@ module.exports = function (karmaConfig) {
         browsers: ['PhantomJS2'],
 
         singleRun: config.ci
-    })
+    });
 };
