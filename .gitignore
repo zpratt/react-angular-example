@@ -1,0 +1,7 @@
+app/index.html
+app/js
+.DS_STORE
+.idea
+*.iml
+node_modules
+*.log
