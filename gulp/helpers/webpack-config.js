@@ -10,7 +10,6 @@ module.exports = getConfig({
         historyApiFallback: true,
         hot: true
     },
-    isDev: true,
     html: function (context) {
         return {
             'index.html': context.defaultTemplate({
