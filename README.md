@@ -3,7 +3,7 @@ React Angular Example
 
 [See the live example](http://zpratt.github.io/react-angular-example/app/).
 
-The README is a work in progress. Here's the gist:
+The README (and the project itself) is a work in progress. Here's the gist:
 
 This project illustrates how to use the following things:
 
