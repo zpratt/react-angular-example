@@ -8,7 +8,6 @@ let expect = window.expect,
 
 describe('Factory: <WatchList />', function () {
     let WatchList,
-        $timeout,
 
         stubWatchListData,
         firstWatchedRepo,
@@ -27,7 +26,6 @@ describe('Factory: <WatchList />', function () {
         module('app');
 
         inject(function (_$timeout_, _WatchListComponent_) {
-            $timeout = _$timeout_;
             WatchList = _WatchListComponent_;
         });
 

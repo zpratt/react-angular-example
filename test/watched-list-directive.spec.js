@@ -16,7 +16,7 @@ describe('Directive: <watch-list />', function () {
         watchListElement,
 
         $rootScope,
-
+        $document,
         $scope,
         $timeout,
         $compile;
@@ -42,7 +42,13 @@ describe('Directive: <watch-list />', function () {
             });
         });
 
-        inject(function (_$rootScope_, _$timeout_, _$compile_) {
+        inject(function (
+            _$document_,
+            _$rootScope_,
+            _$timeout_,
+            _$compile_
+        ) {
+            $document = _$document_;
             $rootScope = _$rootScope_;
             $timeout = _$timeout_;
             $compile = _$compile_;
@@ -58,11 +64,11 @@ describe('Directive: <watch-list />', function () {
         $compile(commitsListDirectiveEl)($scope);
         $timeout.flush();
 
-        angular.element(document.body).append(commitsListDirectiveEl);
+        angular.element($document.body).append(commitsListDirectiveEl);
     });
 
     afterEach(function () {
-        document.body.innerHTML = '';
+        angular.element($document.body).empty();
     });
 
     it('should render the WatchListComponent', function () {

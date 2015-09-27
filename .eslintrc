@@ -6,6 +6,7 @@
         "mocha": true
     },
     "ecmaFeatures": {
+        "jsx": true,
         "modules": true
     },
     "plugins": [
@@ -61,7 +62,7 @@
         "angular/typecheck-object": 2,
         "angular/typecheck-regexp": 2,
         "angular/typecheck-string": 2,
-        "angular/window-service": 1,
+        "angular/window-service": 0,
 
         "no-alert": 2,
         "no-array-constructor": 2,
@@ -114,7 +115,7 @@
         "no-proto": 2,
         "no-iterator": 2,
         "no-mixed-requires": [0, false],
-        "no-extra-parens": 2,
+        "no-extra-parens": [2, "functions"],
         "no-shadow": 2,
         "no-use-before-define": 2,
         "no-redeclare": 2,
