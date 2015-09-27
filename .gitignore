@@ -1,5 +1,5 @@
-app/index.html
-app/js
+app/*.*
+!app/index.html
 .DS_STORE
 .idea
 *.iml
